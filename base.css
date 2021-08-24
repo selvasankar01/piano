@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body > div{
+    width:100vw;
+    height: 50vh;
+}
+
+#speaker{
+    background-color: #93B5C6;
+    display: grid;
+    place-items: center;
+}
+
+#keys{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.key{
+    background-color: blanchedalmond;
+    flex-basis: 1;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: solid 2px black;
+    border-radius: 0 0 5% 5%;
+    margin: 0 3px 10px 3px;
+}
+
+.key:active{
+    transform: scale(0.95,0.9);
+    transform-origin: top;
+}
+
+img{
+    visibility: hidden;
+    width: 2rem;
+    height: 2rem;
+}
